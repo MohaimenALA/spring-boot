@@ -1,2 +1,48 @@
-package com.example.springboot;public class Course {
+package com.example.springboot;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public class Course {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long courseId;
+
+    private String courseName;
+    private String courseNumber;
+    private int capacity;
+
+
+    public Long getCourseId() {
+        return courseId;
+    }
+
+
+
+    public void setCourseId(Long courseId) {
+        this.courseId = courseId;
+    }
+
+
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
 }
