@@ -1,9 +1,11 @@
 package com.example.springboot;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@Entity
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +26,9 @@ public class Course {
         this.courseId = courseId;
     }
 
+    public String getCourseNumber() {return courseNumber;}
 
+    public void setCourseNumber(String courseNumber) {this.courseNumber = courseNumber;}
 
     public String getCourseName() {
         return courseName;
