@@ -13,13 +13,9 @@ public class Enrollment {
     private Integer courseID;
     private Integer studentID;
 
-    public Integer getEid() {
-        return eid;
-    }
 
-    public void setEid(Integer eid) {
-        this.eid = eid;
-    }
+
+
 
     public Integer getCourseID() {
         return courseID;

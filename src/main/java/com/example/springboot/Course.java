@@ -15,6 +15,14 @@ public class Course {
     private String courseNumber;
     private int capacity;
 
+    private String year;
+
+    private String semester;
+
+    private String pid;
+
+
+
 
     public Long getCourseId() {
         return courseId;
@@ -48,5 +56,18 @@ public class Course {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
+
+    public String getYear() {return year;}
+
+    public void setYear(String year) {this.year = year;}
+
+    public String getSemester() {return semester;}
+
+    public void setSemester(String semester) {this.semester = semester;}
+
+    public String getPid() {return pid;}
+
+    public void setPid(String pid) {this.pid = pid;}
 
 }
